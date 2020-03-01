@@ -19,6 +19,9 @@ def get_name(request):
         # create a form instance and populate it with data from the request:
         form = NameForm(request.POST)
         # check whether it's valid:
+        for item in form:
+            print(item)
+
         if form.is_valid():
             # process the data in form.cleaned_data as required
             # ...
@@ -42,4 +45,4 @@ def get_name(request):
     return render(request, 'name.html', final_context)
 
 class NameForm(forms.Form):
-    your_name = forms.CharField(label='Your name', max_length=100)
+    your_name = forms.CharField(label='country', max_length=100)
