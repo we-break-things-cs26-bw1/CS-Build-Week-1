@@ -31,7 +31,10 @@ def move(request):
     player = request.user.player
     player_id = player.id
     player_uuid = player.uuid
-    data = json.loads(request.body)
+    data=request.data
+    print(f"incoming data: {data}")
+    if 'direction' not in data.keys():
+        return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
     direction = data['direction']
     room = player.room()
     nextRoomID = None
@@ -65,3 +68,8 @@ def move(request):
 def say(request):
     # IMPLEMENT
     return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
+
+
+@api_view(["POST"])
+def sauce(request):
+    pass
