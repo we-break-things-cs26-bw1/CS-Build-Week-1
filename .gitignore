@@ -681,3 +681,4 @@ MigrationBackup/
 # End of https://www.gitignore.io/api/django,python,pycharm,visualstudio,visualstudiocode,openframeworks+visualstudio
 
 pipenv-bw
+.idea
