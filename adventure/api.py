@@ -7,7 +7,10 @@ from django.contrib.auth.models import User
 from .models import *
 from rest_framework.decorators import api_view
 import json
-
+from .clientex import get_name
+from django import forms
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
 # instantiate pusher
 # pusher = Pusher(app_id=config('PUSHER_APP_ID'), key=config('PUSHER_KEY'), secret=config('PUSHER_SECRET'), cluster=config('PUSHER_CLUSTER'))
 
@@ -70,6 +73,27 @@ def say(request):
     return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
 
 
-@api_view(["POST"])
+@api_view(["POST","GET"])
 def sauce(request):
-    pass
+    return get_name(request)
+
+#     # if this is a POST request we need to process the form data
+#     if request.method == 'POST':
+#         # create a form instance and populate it with data from the request:
+#         form = NameForm(request.POST)
+#         # check whether it's valid:
+#         if form.is_valid():
+#             # process the data in form.cleaned_data as required
+#             # ...
+#             # redirect to a new URL:
+#             return HttpResponseRedirect('/thanks/')
+#
+#     # if a GET (or any other method) we'll create a blank form
+#     else:
+#         form = NameForm()
+#
+#     return render(request, 'name.html', {'form': form})
+#
+#
+# class NameForm(forms.Form):
+#     your_name = forms.CharField(label='Your name', max_length=100)
