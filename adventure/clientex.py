@@ -13,13 +13,14 @@ def get_name(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('/thanks/')
+            print(form.your_name)
+            return HttpResponseRedirect(f'/{form.your_name}/')
 
     # if a GET (or any other method) we'll create a blank form
     else:
         form = NameForm()
-
-    return render(request, 'name.html', {'form': form})
+    some_value ="<h1>f templates</h1>"
+    return render(request, 'name.html', {'form': form,'some_value':some_value})
 
 class NameForm(forms.Form):
     your_name = forms.CharField(label='Your name', max_length=100)
