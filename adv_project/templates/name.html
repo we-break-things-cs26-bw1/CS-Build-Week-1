@@ -9,6 +9,10 @@
     {% csrf_token %}
     {{ form }}
     {{  some_value | safe }}
+   {% block messages %}
+    {% if country %}<div class='imp_message'>{{ country }}</div>{% endif %}
+{% endblock %}
+
     <input type="submit" value="Submit">
 </form>
 
