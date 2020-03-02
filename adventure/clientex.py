@@ -1,7 +1,12 @@
 from django import forms
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.views.generic import FormView
+from django.http import JsonResponse
 import requests
+
+from .mixins import AjaxFormMixin
+
 
 def get_name(request):
     response = requests.get('http://api.ipstack.com/104.32.252.209?access_key=88579c7866daa3c8c5407d91c627bdd5&format=1')
@@ -45,4 +50,26 @@ def get_name(request):
     return render(request, 'name.html', final_context)
 
 class NameForm(forms.Form):
-    your_name = forms.CharField(label='country', max_length=100)
+    your_name = forms.CharField(label='enter name nja', max_length=100)
+
+class NameFormView(AjaxFormMixin,FormView):
+    form_class = NameForm
+    template_name  = 'ajax.html'
+    success_url = '/form-success/'
+    def form_invalid(self, form):
+        response = super(NameFormView, self).form_invalid(form)
+        if self.request.is_ajax():
+            return JsonResponse(form.errors, status=400)
+        else:
+            return response
+
+    def form_valid(self, form):
+        response = super(NameFormView, self).form_valid(form)
+        if self.request.is_ajax():
+            print(form.cleaned_data)
+            data = {
+                'message': "Successfully submitted form data."
+            }
+            return JsonResponse(data)
+        else:
+            return response

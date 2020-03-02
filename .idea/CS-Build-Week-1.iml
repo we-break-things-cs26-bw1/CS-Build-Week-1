@@ -18,8 +18,9 @@
       <sourceFolder url="file://$MODULE_DIR$/adventure" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/pipenv-bw" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (Intro-Python-IIgit)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (django_experiements)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
