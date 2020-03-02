@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>If you see this message then it means that you have successfully connected!</h1>
+    <p>This is a template</p>
+
+
+<p>
+<!--    Displays the username-->
+     Hello there {{ request.user }},
+    <br>
+
+<!--    Displays the dictionary value of my_text and my_number from views.py-->
+<!--    {{ my_text }}-->
+<!--    {{ my_number }}-->
+<!--    {{ my_list }}-->
+</p>
+
+<!--Prints out the list-->
+<!--ul marks the start of a list -->
+<!--<ul>-->
+<!--    {% for my_sub_item in my_list %}-->
+<!--    <li>{{ forloop.counter }} - {{ my_sub_item }}</li>-->
+<!--    {% endfor %}-->
+<!--</ul>-->
+
+{% endblock %}

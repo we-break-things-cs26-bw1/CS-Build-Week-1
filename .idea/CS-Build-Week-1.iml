@@ -18,7 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/adventure" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/pipenv-bw" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (Intro-Python-IIgit)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Pipenv (CS-Build-Week-1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
