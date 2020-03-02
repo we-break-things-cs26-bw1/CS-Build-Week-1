@@ -4,14 +4,13 @@
 {% endcomment %}
 {% block content %}
     <form class='my-ajax-form' method='POST' action='.'
-          data-url='{{ request.build_absolute_uri|safe }}'>
+          data-url='{{ request.build_absolute_uri | safe }}'>
         {% csrf_token %}
         {{form.as_p|safe}}
         <button type='submit'>Submit</button>
     </form>
 {% endblock content %}
 {% block javascript %}
-
     <script>
         function getCookie(name) {
             var cookieValue = null;
@@ -47,8 +46,8 @@
             $myForm.submit(function(event){
                 event.preventDefault()
                 var $formData = $(this).serialize()
-                window.alert($formData);
-                var $thisURL = $myForm.attr('data-url') || window.location.href // or set your own url
+                var $thisURL = $myForm.attr('name_response') || window.location.href // or set your own url
+                 window.alert($thisURL);
                 $.ajax({
                     method: "POST",
                     url: $thisURL,
@@ -59,9 +58,12 @@
             })
 
             function handleFormSuccess(data, textStatus, jqXHR){
-                console.log(data)
-                console.log(textStatus)
-                console.log(jqXHR)
+                window.alert(data.message);
+                window.alert(data.form_data);
+                console.log(data);
+                console.log(textStatus);
+                console.log(jqXHR);
+                console.log("handle form success triggered");
                 $myForm.reset(); // reset form data
             }
 
@@ -69,6 +71,7 @@
                 console.log(jqXHR)
                 console.log(textStatus)
                 console.log(errorThrown)
+                console.log("handle form error triggered")
             }
         })
     </script>

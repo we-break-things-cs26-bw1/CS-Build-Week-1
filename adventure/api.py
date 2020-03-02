@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from .models import *
 from rest_framework.decorators import api_view
 import json
-from .clientex import get_name
+from .clientex import get_name, name_response_clientex
 from django import forms
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
@@ -72,6 +72,9 @@ def say(request):
     # IMPLEMENT
     return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
 
+@api_view(["POST","GET"])
+def name_response(request):
+    return name_response_clientex(request)
 
 @api_view(["POST","GET"])
 def sauce(request):

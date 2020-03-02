@@ -7,4 +7,5 @@ urlpatterns = [
     url('say', say),
     url('sauce',sauce),
     url(r'^name/', NameFormView.as_view()),
+    url('name_response',name_response)
 ]

@@ -49,13 +49,19 @@ def get_name(request):
     print(f" final context is {final_context}")
     return render(request, 'name.html', final_context)
 
+
 class NameForm(forms.Form):
     your_name = forms.CharField(label='enter name nja', max_length=100)
 
+
+####
+#   does demonstrates taking in data and returning based on that data
+#
+####
 class NameFormView(AjaxFormMixin,FormView):
     form_class = NameForm
     template_name  = 'ajax.html'
-    success_url = '/form-success/'
+    success_url = 'name_response'
     def form_invalid(self, form):
         response = super(NameFormView, self).form_invalid(form)
         if self.request.is_ajax():
@@ -66,10 +72,17 @@ class NameFormView(AjaxFormMixin,FormView):
     def form_valid(self, form):
         response = super(NameFormView, self).form_valid(form)
         if self.request.is_ajax():
-            print(form.cleaned_data)
+            print(f"cleaned data = {form.cleaned_data}")
+            print("nameformview.form_valid called")
+            form_data_extract="this is the data extract" + str(form.cleaned_data)
             data = {
-                'message': "Successfully submitted form data."
+                'form_data': form_data_extract,
+                'message': f"Successfully submitted form data. and data is {form.cleaned_data}"
             }
             return JsonResponse(data)
         else:
             return response
+
+def name_response_clientex(request):
+    print({request})
+
