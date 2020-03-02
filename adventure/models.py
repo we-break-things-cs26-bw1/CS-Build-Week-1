@@ -41,7 +41,9 @@ class Player(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     currentRoom = models.IntegerField(default=0)
     uuid = models.UUIDField(default=uuid.uuid4, unique=True)
+
     def initialize(self):
+        self.inventory = []
         if self.currentRoom == 0:
             self.currentRoom = Room.objects.first().id
             self.save()
@@ -51,6 +53,8 @@ class Player(models.Model):
         except Room.DoesNotExist:
             self.initialize()
             return self.room()
+
+
 
 @receiver(post_save, sender=User)
 def create_user_player(sender, instance, created, **kwargs):
