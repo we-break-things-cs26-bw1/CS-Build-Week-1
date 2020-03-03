@@ -45,6 +45,7 @@ class Player(models.Model):
 
     def initialize(self):
         self.hp = 100
+        self.gold = 5
         self.inventory = [items.HealingPotion, weapons.JacksEnchantedHoboShotgun, items.CrustyBread ]
         if self.currentRoom == 0:
             self.currentRoom = Room.objects.first().id
