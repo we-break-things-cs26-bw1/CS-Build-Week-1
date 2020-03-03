@@ -1,0 +1,46 @@
+
+
+
+GET initPlayer : return Json describing players current status
+and containing room
+    something similar to:
+    def initialize(request):
+        user = request.user
+        player = user.player
+        player_id = player.id
+        uuid = player.uuid
+        room = player.room()
+        //room will presumedly contain references
+        //to monsters, items, interactive event
+        exits = room.validExits
+        players = room.playerNames(player_id)
+        return JsonResponse({'uuid': uuid, 'name':player.user.username, 'title':room.title, 'description':room.description, 'players':players}, safe=True)
+
+Post playerInteract: accept input from client, sends on for processing
+    in game loop, game loop responds with result of interact in json.
+     e.g
+     @api_view(["POST"])
+       def playerInteract(request):
+       player = request.user.player
+       action = request.value
+       result = gameLoop.doThing(player,action)
+       if result.valid:
+            return JsonObject(describing result of itneraction)
+       else:
+            return error
+
+Post playerMove: accept move input from client, sends on for processing
+    in game loop, game loop responds with result of move in json.
+     e.g
+     @api_view(["POST"])
+       def playerMove(request):
+       player = request.user.player
+       move = request.value
+       moveResult = gameLoop.move(player,move)
+       if moveResult.valid:
+            newRoom=moveResult.newRoom()
+            interactionOptions = newRoom.interactionOptionsForRoom
+            exits=newRoom.exits
+            return JsonObject(describing newroom,interactionOptions)
+       else:
+            return error
