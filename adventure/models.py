@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from rest_framework.authtoken.models import Token
+from adventure import items, weapons
 import uuid
 
 class Room(models.Model):
@@ -43,7 +44,8 @@ class Player(models.Model):
     uuid = models.UUIDField(default=uuid.uuid4, unique=True)
 
     def initialize(self):
-        self.inventory = []
+        self.hp = 100
+        self.inventory = [items.HealingPotion, weapons.JacksEnchantedHoboShotgun, items.CrustyBread ]
         if self.currentRoom == 0:
             self.currentRoom = Room.objects.first().id
             self.save()
