@@ -1,0 +1,71 @@
+html,
+body,
+main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+* {
+    font-family: 'Istok Web';
+}
+
+
+main {
+    background: #21332f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#center {
+    height: auto;
+    width: auto;
+}
+
+#notice {
+    color: green;
+}
+
+
+/*? forms */
+
+form {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+form label {
+    color: #008d2c;
+    font-weight: bold;
+}
+
+form input {
+    border: 2px solid #00d137;
+    background: #00d13744;
+    height: 35px;
+    width: 200px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: -1px 0px 5px white;
+}
+
+form input::placeholder {
+    color: #fff9;
+}
+
+form h1 {
+    color: lime;
+}
+
+#login,
+#signup {
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+/*! forms */

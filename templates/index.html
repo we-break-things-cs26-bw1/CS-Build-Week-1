@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game View</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+</head>
+
+<body>
+    <section id="gameboard">
+        <div id="rooms">
+            <div class="room">
+                <div id="player"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="controller">
+        <div id="controller-up">
+            <p>up</p>
+        </div>
+        <div id="controller-down">
+            <p>down</p>
+        </div>
+        <div id="controller-right">
+            <p>right</p>
+        </div>
+        <div id="controller-left">
+            <p>left</p>
+        </div>
+    </div>
+
+    <div id="actions">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <section id="popup">
+        <p>Greetings there traveler</p>
+    </section>
+
+</body>
+
+</html>

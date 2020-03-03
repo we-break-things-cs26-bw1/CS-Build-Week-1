@@ -1,0 +1,165 @@
+* {
+    font-family: 'Istok Web';
+}
+
+
+#gameboard {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room {
+    height: 250px;
+    width: 250px;
+    border: 2px solid silver;
+    border-radius: 15px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRS7pncBsEuavSUlufbTg9JvtPJ9YZe57m0NwRjC78ZGey3sj1k) 100% / cover;
+}
+
+#popup {
+    display: none;
+    height: 70%;
+    width: 400px;
+    background: #06394c;
+    color: #eb649f;
+    border: 4px solid #22a0b6;
+    border-radius: 15px;
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+/*? player */
+
+#player {
+    height: 100px;
+    width: 70px;
+    background: url(https://www.freepngimg.com/thumb/cat/11-2-cat-png-thumb.png) 100% / contain no-repeat;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#player:hover {
+    box-shadow: 2px 2px 18px 8px #37f1b6;
+    border-radius: 12px;
+}
+
+/*! player */
+
+/* ? items */
+
+.item {
+    height: 100px;
+    width: 70px;
+    background: url(https://pngimg.com/uploads/dog/dog_PNG50371.png) 100% / contain no-repeat;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* ! items */
+
+/* ? actions */
+
+#actions {
+    height: 60px;
+    width: 40vw;
+
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: #eee;
+    border: 2px solid grey;
+}
+
+#actions>* {
+    height: 90%;
+    width: 9%;
+    background: #ccc;
+}
+
+/* ! actions */
+
+/*? controller */
+
+#controller {
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#controller div {
+    background: #4c4c4c;
+    border: 2px solid #000;
+    color: white;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 4px 3px 5px #58494987;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controller div:hover {
+    background: black;
+    color: slateblue;
+}
+
+
+#controller #controller-up {
+    top: 0;
+    right: 50%;
+    transform: translate(50%);
+}
+
+#controller #controller-down {
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+}
+
+#controller #controller-left {
+    left: 0;
+    bottom: 50%;
+    transform: translate(0, 50%);
+}
+
+#controller #controller-right {
+    right: 0;
+    bottom: 50%;
+    transform: translate(0, 50%);
+}
+
+/*! controller */

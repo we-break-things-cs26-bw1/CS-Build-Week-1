@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Login</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/login.css' %}">
+</head>
+
+<body>
+    <main>
+        <section id="center">
+            {% csrf_token %}
+            <form action="" id="signup" class="show">
+                <h1>Sign Up</h1>
+                <label for="">Username
+                    <input type="text" placeholder="username" name="username" class="registrationField">
+                </label>
+                <label for="">Password
+                    <input type="password" placeholder="password" name="password1" class="registrationField">
+                </label>
+                <label for="">Confirm Password
+                    <input type="password" placeholder="confirm password" name="password2" class="registrationField">
+                </label>
+            </form>
+            <form action="" id="login">
+                <h1>Login</h1>
+                <label for="">Username
+                    <input type="text" placeholder="username" name="username" class="loginField">
+                </label>
+                <label for="">Password
+                    <input type="password" placeholder="password" name="password" class="loginField">
+                </label>
+            </form>
+        </section>
+        <p id="notice">Press SPACE to toggle login/signup</p>
+    </main>
+
+    <script src="{% static '/js/login.js' %}"></script>
+</body>
+
+</html>
