@@ -4,22 +4,30 @@ from rest_framework.parsers import JSONParser
 from adventure.models import Room
 from .serializers import RoomSerializer
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework import status
 
-@csrf_exempt
+# @csrf_exempt
+@api_view(['GET', 'POST'])
 def room_list(request):
     if request.method == 'GET':
         rooms = Room.objects.all()
         serializer = RoomSerializer(rooms, many=True)
-        return JsonResponse(serializer.data, safe=False)
+        # return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data)
 
     elif request.method == 'POST':
-        data = JSONParser().parse(request)
-        serializer = RoomSerializer(data=data)
+        # data = JSONParser().parse(request)
+        # serializer = RoomSerializer(data=data)
+        serializer = RoomSerializer(data=request.data)
 
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.errors, status=400)
+            # return JsonResponse(serializer.data, status=201)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        # return JsonResponse(serializer.errors, status=400)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @csrf_exempt
 def room_detail(request, pk):
