@@ -29,25 +29,32 @@ def room_list(request):
         # return JsonResponse(serializer.errors, status=400)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@csrf_exempt
+# @csrf_exempt
+@api_view(['GET', 'PUT', 'DELETE'])
 def room_detail(request, pk):
     try:
         room = Room.objects.get(pk=pk)
     except Room.DoesNotExist:
-        return HttpResponse(status=404)
+        # return HttpResponse(status=404)
+        return HttpResponse(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
         serializer = RoomSerializer(room)
-        return JsonResponse(serializer.data, safe=False)
+        # return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data)
 
     elif request.method == 'PUT':
-        data = JSONParser().parse(request)
-        serializer = RoomSerializer(room, data=data)
+        # data = JSONParser().parse(request)
+        # serializer = RoomSerializer(room, data=data)
+        serializer = RoomSerializer(room, data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse(serializer.errors, status=400)
+            # return JsonResponse(serializer.data)
+            return Response(serializer.data)
+        # return JsonResponse(serializer.errors, status=400)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     elif request.method == 'DELETE':
         room.delete()
-        return HttpResponse(status=204)
+        # return HttpResponse(status=204)
+        return Response(status=status.HTTP_404_NOT_FOUND)
