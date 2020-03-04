@@ -39,7 +39,7 @@
 
 # heh stupid helper function
 def twoTupleAdd(tuple1, tuplle2):
-    return tuple1[0] + tuplle2[0], tuple1[1] + tuplle2[1]
+    return (tuple1[0] + tuplle2[0], tuple1[1] + tuplle2[1])
 
 
 def Array2d(width, height):
@@ -114,7 +114,7 @@ class Stage():
         #    }
         for pos in self.bounds.inflate(-1):
             tile: Tile = self[pos]
-            if (tile.isTraversable):
+            if tile.isTraversable:
                 self._numExplorable += 1
             else:
                 for dir in Directions:
@@ -224,6 +224,8 @@ class StageBuilder():
             #      // Prefer to erode tiles near more floor tiles so the erosion isn't too
             #     // spiky.
             if floors < 2: continue
+
+            ####### NEED ONE IN X CODE HERE !!!!!!@!@@!@ TODO()
             if random.oneIn(9 - floors): self.setTile(pos, floor)
 
 
@@ -257,7 +259,7 @@ class dungeon(StageBuilder):
             raise ValueError("the stage be odd-sized")
         self.bindStage(stage)
         self.fill(TileTypeMap[Wall])
-        self._region = Array2d(stage.width, stage.height)
+        self._regions = Array2d(stage.width, stage.height)
         self._addRooms()
 
         #  // Fill in all of the empty space with mazes.
@@ -266,44 +268,46 @@ class dungeon(StageBuilder):
             for x in range(1, self.stage.bounds.width, 2):
                 pos = (x, y)
                 if self.getTile(pos) is not TileTypeMap[Wall]: continue
-                _growMaze(pos)
+                self._growMaze(pos)
 
-        _connectRegions();
-        _removeDeadEnds();
+        self._connectRegions();
+        self._removeDeadEnds();
 
-        _rooms.forEach(onDecorateRoom);
+
+        #think you might be able to cut this, not sure, definitely review before impl TODO()
+        self._rooms.forEach(onDecorateRoom);
 
 
 ##  /// Implementation of the "growing tree" algorithm from here:
 # /// http://www.astrolog.org/labyrnth/algrithm.htm.
-def _growMaze(self, start: Vec):
-    pass
+    def _growMaze(self, start: Vec):
+        pass
 
 
 #    // Find all of the tiles that can connect two (or more) regions.
-def _connectRegions():
-    pass
+    def _connectRegions(self):
+        pass
 
 
-def _removeDeadEnds():
-    pass
+    def _removeDeadEnds(self):
+        pass
 
 
-def _addJunction(pos: Vec):
-    pass
+    def _addJunction(self,pos: Vec):
+        pass
 
 
-def _carve(pos, tileType):
-    pass
+    def _carve(self,pos, tileType):
+        pass
 
 
-#   /// Places rooms ignoring the existing maze corridors.
-def _addRooms():
-    pass
+    #   /// Places rooms ignoring the existing maze corridors.
+    def _addRooms(self):
+        pass
 
 
-def setTile(self, TileType):
-    pass
+    def setTile(self, TileType):
+        pass
 
 # /// Static class containing all of the [TileType]s.
 # class Tiles {
