@@ -110,10 +110,14 @@ class Stage():
 
     def finishBuild(self):
         self._numExplorable = 0
+        self.rect = pygame.Rect
         # inflate method should shrink rect tangle
         # Rect inflate(double delta) {
         #   return Rect.fromLTRB(left - delta, top - delta, right + delta, bottom + delta);
         #    }
+
+        self.rect.inflate()
+
         for pos in self.bounds.inflate(-1):
             tile: Tile = self[pos]
             if tile.isTraversable:
@@ -377,5 +381,8 @@ class dungeon(StageBuilder):
         #    }
 def inflate(left, top, right, bottom):
     return (left )
+
+
+
 
 
