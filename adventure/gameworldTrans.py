@@ -86,6 +86,7 @@ class Stage():
         self.items = {}  # items
         self._visibilityDirty = _visibilityDirty
         self._numExplorable = _numExplorable
+        self.rect = pygame.Rect
 
     def __getitem__(self, pos):
         """"
@@ -110,13 +111,15 @@ class Stage():
 
     def finishBuild(self):
         self._numExplorable = 0
-        self.rect = pygame.Rect
+
         # inflate method should shrink rect tangle
         # Rect inflate(double delta) {
         #   return Rect.fromLTRB(left - delta, top - delta, right + delta, bottom + delta);
         #    }
 
-        self.rect.inflate()
+        #Takes in an x and a y, uses the center to inflate
+        #  inflate() returns a new rect while inflate_ip() modifies the rect you pass it
+        self.rect.inflate(self, )
 
         for pos in self.bounds.inflate(-1):
             tile: Tile = self[pos]
@@ -379,8 +382,8 @@ class dungeon(StageBuilder):
         # Rect inflate(double delta) {
         #   return Rect.fromLTRB(left - delta, top - delta, right + delta, bottom + delta);
         #    }
-def inflate(left, top, right, bottom):
-    return (left )
+# def inflate(left, top, right, bottom):
+#     return (left )
 
 
 
