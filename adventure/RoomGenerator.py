@@ -3,83 +3,93 @@ import random
 # Merchant to go here
 from adventure import npc
 
-CHARACTER_TILESTEST = "MERCHANT"
+# CHARACTER_TILESTEST = "MERCHANT"
+#
+# class MapTile:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#
+# class FindGoldTile(MapTile):
+#     def __init__(self, x, y):
+#         self.gold = random.randint(1, 50)
+#         self.gold_claimed = False
+#
+#         super().__init__(x, y)
+# def modify_player(self, player):
+#     if not self.gold_claimed:
+#         self.gold_claimed = True
+#         player.gold = player.gold + self.gold
+#         print(f"+ {self.gold} gold Added")
+# def intro_text(self):
+#     if self.gold_claimed:
+#         return  """
+#         Another boring section, continue
+#         """
+#     else:
+#         """
+#         Someone dropped some gold, you pick it up
+#         """
+#
+#
+# class TraderJoes(MapTile):
+#     def __init__(self, x,y):
+#         self.trader = npc.Trader()
+#         super().__init__(x, y)
+#
+#     def check_if_trade(self, player):
+#         while True:
+#             print("Would you like to (B)uy, (S)ell, or (Q)uit?")
+#             user_input = input()
+#             if user_input in ['Q', 'q']:
+#                 return
+#             elif user_input in ['B', 'b']:
+#                 print("Here's whats available to buy: ")
+#                 self.trade(buyer=player, seller=self.trader)
+#             elif user_input in ['S', 's']:
+#                 print("Here's whats available to sell: ")
+#                 self.trade(buyer=self.trader, seller=player)
+#             else:
+#                 print("Invalid choice!")
+#
+#     def trade(self, buyer, seller):
+#         for i, item in enumerate(seller.inventory, 1):
+#             print("{}. {} - {} Gold".format(i, item.name, item.value))
+#         while True:
+#             user_input = input("Choose an item or press Q to exit: ")
+#             if user_input in ['Q', 'q']:
+#                 return
+#             else:
+#                 try:
+#                     choice = int(user_input)
+#                     to_swap = seller.inventory[choice - 1]
+#                     self.swap(seller, buyer, to_swap)
+#                 except ValueError:
+#                     print("Invalid choice!")
+#
+#     def swap(self, seller, buyer, item):
+#         if item.value > buyer.gold:
+#             print("That's too expensive")
+#             return
+#         seller.inventory.remove(item)
+#         buyer.inventory.append(item)
+#         seller.gold = seller.gold + item.value
+#         buyer.gold = buyer.gold - item.value
+#         print("Trade complete!")
+#
+#     def intro_text(self):
+#         return """An almost wolf like voice calls to your from the dark "Want to trade"? """
 
-class MapTile:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
 
-class FindGoldTile(MapTile):
-    def __init__(self, x, y):
-        self.gold = random.randint(1, 50)
-        self.gold_claimed = False
-
-        super().__init__(x, y)
-def modify_player(self, player):
-    if not self.gold_claimed:
-        self.gold_claimed = True
-        player.gold = player.gold + self.gold
-        print(f"+ {self.gold} gold Added")
-def intro_text(self):
-    if self.gold_claimed:
-        return  """
-        Another boring section, continue
-        """
-    else:
-        """
-        Someone dropped some gold, you pick it up
-        """
-
-
-class TraderJoes(MapTile):
-    def __init__(self, x,y):
-        self.trader = npc.Trader()
-        super().__init__(x, y)
-
-    def check_if_trade(self, player):
-        while True:
-            print("Would you like to (B)uy, (S)ell, or (Q)uit?")
-            user_input = input()
-            if user_input in ['Q', 'q']:
-                return
-            elif user_input in ['B', 'b']:
-                print("Here's whats available to buy: ")
-                self.trade(buyer=player, seller=self.trader)
-            elif user_input in ['S', 's']:
-                print("Here's whats available to sell: ")
-                self.trade(buyer=self.trader, seller=player)
-            else:
-                print("Invalid choice!")
-
-    def trade(self, buyer, seller):
-        for i, item in enumerate(seller.inventory, 1):
-            print("{}. {} - {} Gold".format(i, item.name, item.value))
-        while True:
-            user_input = input("Choose an item or press Q to exit: ")
-            if user_input in ['Q', 'q']:
-                return
-            else:
-                try:
-                    choice = int(user_input)
-                    to_swap = seller.inventory[choice - 1]
-                    self.swap(seller, buyer, to_swap)
-                except ValueError:
-                    print("Invalid choice!")
-
-    def swap(self, seller, buyer, item):
-        if item.value > buyer.gold:
-            print("That's too expensive")
-            return
-        seller.inventory.remove(item)
-        buyer.inventory.append(item)
-        seller.gold = seller.gold + item.value
-        buyer.gold = buyer.gold - item.value
-        print("Trade complete!")
-
-    def intro_text(self):
-        return """An almost wolf like voice calls to your from the dark "Want to trade"? """
-
+# exits: ["n", "s", "e", "w"],
+#         monsters: "",
+#         items: [],
+#         x: 0,
+#         y: 100,
+#         height: 100,
+#         width: 100,
+#         uuid: "room1",
+#         background: "https://files.slack.com/files-pri/T4JUEB3ME-FUJ7WV4V7/fall_background.jpg",
 
 
 CHARACTER_TILES = {'stone': ' ',
@@ -88,7 +98,7 @@ CHARACTER_TILES = {'stone': ' ',
 
 
 class Generator():
-    def __init__(self, width=200, height=100, max_rooms=100, min_room_xy=5,
+    def __init__(self, width=50, height=50, max_rooms=100, min_room_xy=5,
                  max_room_xy=10, rooms_overlap=False, random_connections=1,
                  random_spurs=3, tiles=CHARACTER_TILES):
         self.width = width
