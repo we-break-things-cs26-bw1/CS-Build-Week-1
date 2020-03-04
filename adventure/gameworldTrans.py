@@ -322,6 +322,35 @@ class dungeon(StageBuilder):
            rectangularity = random.randrange(0, 1 + size / 2) * 2 #Maybe need to truncate
            width = size
            height = size
+           if random.randint(1, 101) / 2 == 1:
+               width += rectangularity
+           else:
+               height += rectangularity
+
+
+
+
+            x = random.randrange((self.stage.bounds.width - width) /2) * 2 + 1 #Maybe need to truncate
+            y = random.randrange((self.stage.bounds.height - height) /2) * 2 + 1 #Maybe need to truncate
+
+            room = Rect(x, y, width, height)
+
+            overlaps = False
+            for i in _rooms:
+                if room.distanceTo(other) <= 0:
+                    overlaps = True
+                    continue
+
+
+
+            _rooms += room
+
+
+            _startRegion()
+
+            for pos in Rect(x, y, width, height):
+                _carve(pos)
+
 
 
 
