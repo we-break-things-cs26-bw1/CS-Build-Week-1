@@ -37,6 +37,8 @@
 # self.stage.bounds.height -- bounds off rect needs to be able to provide height
 # and width self.stage.bounds.width
 
+import pygame
+
 # heh stupid helper function
 def twoTupleAdd(tuple1, tuplle2):
     return (tuple1[0] + tuplle2[0], tuple1[1] + tuplle2[1])
@@ -369,3 +371,11 @@ class dungeon(StageBuilder):
 #     ]);
 #   }
 # }
+# inflate method should shrink rect tangle
+        # Rect inflate(double delta) {
+        #   return Rect.fromLTRB(left - delta, top - delta, right + delta, bottom + delta);
+        #    }
+def inflate(left, top, right, bottom):
+    return (left )
+
+
