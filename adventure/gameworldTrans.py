@@ -36,6 +36,7 @@
 # neeed a 1 in x return true function, i.e 1 in 3, roll a rng number, if 1 return true
 # self.stage.bounds.height -- bounds off rect needs to be able to provide height
 # and width self.stage.bounds.width
+import random
 
 import pygame
 
@@ -192,6 +193,7 @@ TileTypeMap[Wall] = TileType(name="wall", isPassable=False, isTraversable=False,
 
 class StageBuilder():
 
+
     def bindStage(self, stage: Stage):
         self.stage = stage
 
@@ -242,6 +244,7 @@ class dungeon(StageBuilder):
 
     def __init__(self, numRoomTries, extraConnectorChance, roomExtraSize, windingPercent, _rooms, _regions,
                  _currrentRegion=-1, stage=None):
+        super().__init__(stage)
         self.numRoomTries = numRoomTries
         # positive int
         # /// The inverse chance of adding a connector between two regions that have
@@ -263,6 +266,7 @@ class dungeon(StageBuilder):
         self.currentRegion = _currrentRegion
         self.stage = stage
 
+
     def generate(self, stage: Stage):
         if stage.width % 2 == 0 or stage.height % 2 == 0:
             raise ValueError("the stage be odd-sized")
@@ -279,16 +283,17 @@ class dungeon(StageBuilder):
                 if self.getTile(pos) is not TileTypeMap[Wall]: continue
                 self._growMaze(pos)
 
-        self._connectRegions();
-        self._removeDeadEnds();
+        self._connectRegions()
+        self._removeDeadEnds()
 
 
-        #think you might be able to cut this, not sure, definitely review before impl TODO()
-        self._rooms.forEach(onDecorateRoom);
+
+    # think you might be able to cut this, not sure, definitely review before impl TODO()
+    # self._rooms.forEach(onDecorateRoom);
 
 
-##  /// Implementation of the "growing tree" algorithm from here:
-# /// http://www.astrolog.org/labyrnth/algrithm.htm.
+    ##  /// Implementation of the "growing tree" algorithm from here:
+    # /// http://www.astrolog.org/labyrnth/algrithm.htm.
     def _growMaze(self, start: Vec):
         pass
 
@@ -311,8 +316,14 @@ class dungeon(StageBuilder):
 
 
     #   /// Places rooms ignoring the existing maze corridors.
-    def _addRooms(self):
-        pass
+    def _addRooms(self, numRoomTries=60):
+       for i in range(0, numRoomTries):
+           size = random.randrange(0, 1 + self.roomExtraSize) * 2 + 1
+           rectangularity = random.randrange(0, 1 + size / 2) * 2 #Maybe need to truncate
+           width = size
+           height = size
+
+
 
 
     def setTile(self, TileType):
@@ -384,6 +395,9 @@ class dungeon(StageBuilder):
         #    }
 # def inflate(left, top, right, bottom):
 #     return (left )
+
+#Tree growing algo
+
 
 
 
