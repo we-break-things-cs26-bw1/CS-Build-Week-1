@@ -1,8 +1,9 @@
 from django.conf.urls import url
-from . import api
+from .api import *
 
 urlpatterns = [
-    url('init', api.initialize),
-    url('move', api.move),
-    url('say', api.say),
+    url('init', initialize),
+    url('move', move),
+    url('say', say),
+    url('sauce',sauce)
 ]

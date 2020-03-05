@@ -1,0 +1,194 @@
+* {
+    font-family: 'Istok Web';
+}
+
+#gameboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.room {
+    border-radius: 15px;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 15px;
+    background: #eee;
+    border: 1px solid silver;
+    border-radius: 12px;
+}
+
+#health-container {
+    width: 250px;
+    height: 35px;
+    border: 1px solid crimson;
+    background: #ed143d21;
+}
+
+#health {
+    height: 100%;
+    width: 70%;
+    transition: .5s;
+
+    background: crimson;
+}
+
+#roomCount {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    color: black;
+    font-weight: bold;
+    background: #fff;
+    z-index: 2;
+    padding: 5px 10px;
+}
+
+#roomCountNum {
+    color: green;
+}
+
+#popup {
+    display: none;
+    height: 70%;
+    width: 400px;
+    background: #06394c;
+    color: #eb649f;
+    border: 4px solid #22a0b6;
+    border-radius: 15px;
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+/*? player */
+
+#player {
+    height: 70px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/*! player */
+
+/* ? items */
+
+.item {
+    height: 100px;
+    width: 70px;
+    background: url(https://pngimg.com/uploads/dog/dog_PNG50371.png) 100% / contain no-repeat;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* ! items */
+
+/* ? actions */
+
+#actions {
+    height: 60px;
+    width: 40vw;
+
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: #eee;
+    border: 2px solid grey;
+}
+
+#actions>* {
+    height: 90%;
+    width: 9%;
+    background: #ccc;
+}
+
+/* ! actions */
+
+/*? controller */
+
+#controller {
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2;
+}
+
+#controller div {
+    background: #4c4c4c;
+    border: 2px solid #000;
+    color: white;
+    font-weight: bold;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 4px 3px 5px #58494987;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controller div:hover {
+    background: black;
+    color: #fb29fd;
+}
+
+
+#controller #controller-up {
+    top: 0;
+    right: 50%;
+    transform: translate(50%);
+}
+
+#controller #controller-down {
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+}
+
+#controller #controller-left {
+    left: 0;
+    bottom: 50%;
+    transform: translate(0, 50%);
+}
+
+#controller #controller-right {
+    right: 0;
+    bottom: 50%;
+    transform: translate(0, 50%);
+}
+
+/*! controller */
