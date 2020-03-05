@@ -2,30 +2,63 @@
     font-family: 'Istok Web';
 }
 
-
 #gameboard {
     position: fixed;
-    height: 100%;
-    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .room {
-    height: 250px;
-    width: 250px;
-    border: 2px solid silver;
     border-radius: 15px;
-    position: relative;
+    position: absolute;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRS7pncBsEuavSUlufbTg9JvtPJ9YZe57m0NwRjC78ZGey3sj1k) 100% / cover;
+}
+
+#bars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 15px;
+    background: #eee;
+    border: 1px solid silver;
+    border-radius: 12px;
+}
+
+#health-container {
+    width: 250px;
+    height: 35px;
+    border: 1px solid crimson;
+    background: #ed143d21;
+}
+
+#health {
+    height: 100%;
+    width: 70%;
+    transition: .5s;
+
+    background: crimson;
+}
+
+#roomCount {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    color: black;
+    font-weight: bold;
+    background: #fff;
+    z-index: 2;
+    padding: 5px 10px;
+}
+
+#roomCountNum {
+    color: green;
 }
 
 #popup {
@@ -46,9 +79,8 @@
 /*? player */
 
 #player {
-    height: 100px;
-    width: 70px;
-    background: url(https://www.freepngimg.com/thumb/cat/11-2-cat-png-thumb.png) 100% / contain no-repeat;
+    height: 70px;
+    width: 40px;
     cursor: pointer;
     position: absolute;
     bottom: 0px;
@@ -56,10 +88,6 @@
     transform: translate(-50%);
 }
 
-#player:hover {
-    box-shadow: 2px 2px 18px 8px #37f1b6;
-    border-radius: 12px;
-}
 
 /*! player */
 
@@ -111,8 +139,8 @@
     height: 250px;
     width: 250px;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 40px;
+    right: 40px;
     z-index: 2;
 }
 
@@ -120,6 +148,7 @@
     background: #4c4c4c;
     border: 2px solid #000;
     color: white;
+    font-weight: bold;
     height: 80px;
     width: 80px;
     position: absolute;
@@ -134,7 +163,7 @@
 
 #controller div:hover {
     background: black;
-    color: slateblue;
+    color: #fb29fd;
 }
 
 

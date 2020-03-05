@@ -39,11 +39,26 @@ function getData() {
     return data
 }
 
+function errorMessage(obj) {
+    let v = Object.values(obj)
+    let message = v.reduce((acc, val) => {
+        return acc + val.join(" | ")
+    }, "")
+
+    $("#error").innerHTML = `<p>${message}</p>`
+    $("#error").style.height = "50px"
+
+    setTimeout(() => {
+        $("#error").style.height = "0";
+    }, 5000)
+}
+
+
 function submit() {
 
     const data = getData()
 
-    fetch(`http://127.0.0.1:8000/api/${mode}/`, {
+    fetch(`https://hidden-sands-27417.herokuapp.com/api/${mode}/`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, *cors, same-origin
         cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -54,7 +69,16 @@ function submit() {
         },
         body: JSON.stringify(data)
     }).then(r => r.json()).then(r => {
-        localStorage["session"] = r.key;
+        console.log(r);
+
+        if ("key" in r) {
+            localStorage["session"] = r.key;
+            location = "../"
+        } else {
+            errorMessage(r)
+        }
+
+
     }).catch(err => {
         console.log(err);
     })

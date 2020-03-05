@@ -11,31 +11,34 @@
 </head>
 
 <body>
-    <section id="gameboard">
-        <div id="rooms">
-            <div class="room">
-                <div id="player"></div>
-                <div class="item"></div>
-            </div>
+    <canvas id="gameboard">
+
+    </canvas>
+
+    <!-- <div id="bars">
+        <h3>Health</h3>
+        <div id="health-container">
+            <div id="health"></div>
         </div>
-    </section>
+
+    </div> -->
 
     <div id="controller">
-        <div id="controller-up">
+        <div id="controller-up" class="controller" direction="n">
             <p>up</p>
         </div>
-        <div id="controller-down">
+        <div id="controller-down" class="controller" direction="s">
             <p>down</p>
         </div>
-        <div id="controller-right">
+        <div id="controller-right" class="controller" direction="e">
             <p>right</p>
         </div>
-        <div id="controller-left">
+        <div id="controller-left" class="controller" direction="w">
             <p>left</p>
         </div>
     </div>
 
-    <div id="actions">
+    <!-- <div id="actions">
         <div></div>
         <div></div>
         <div></div>
@@ -46,11 +49,16 @@
         <div></div>
         <div></div>
         <div></div>
-    </div>
+    </div> -->
 
-    <section id="popup">
+    <!-- <section id="popup">
         <p>Greetings there traveler</p>
-    </section>
+    </section> -->
+
+    <p id="roomCount">Room Count: <span id="roomCountNum"></span></p>
+
+    <script src="{% static '/js/canvas.js' %}"></script>
+    <script src="{% static '/js/index.js' %}"></script>
 
 </body>
 

@@ -28,6 +28,17 @@ main {
     color: green;
 }
 
+#error {
+    background: lime;
+    color: black;
+    height: 0;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease;
+    text-align: center;
+}
 
 /*? forms */
 
