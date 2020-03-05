@@ -7,6 +7,7 @@ import uuid
 
 
 class Room(models.Model):
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=50, default="DEFAULT TITLE")
     description = models.CharField(max_length=500, default="DEFAULT DESCRIPTION")
     n_to = models.IntegerField(default=0)
@@ -39,6 +40,8 @@ class Room(models.Model):
 
     def playerUUIDs(self, currentPlayerID):
         return [p.uuid for p in Player.objects.filter(currentRoom=self.id) if p.id != int(currentPlayerID)]
+    def __str__(self):
+        return self.title
 
 
 class Player(models.Model):
