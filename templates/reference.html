@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/api/adv/sauce" method="post">
+    {% csrf_token %}
+    {{ form }}
+    {{  some_value | safe }}
+   {% block messages %}
+       {%if your_name %}
+           HEY WE GOT YOUR NAME BACK AND THE CIRCLE IS COMPLETE AND<BR>
+           <hr>
+           YOUR_NAME = {{ your_name }}
+       {% endif %}
+
+    {% if country_name %}<div class='imp_message'>{{ country_name }} dang ol tribalism</div>{% endif %}
+{% endblock %}
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

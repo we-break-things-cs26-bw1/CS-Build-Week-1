@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game View</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+</head>
+
+<body>
+    <canvas id="gameboard">
+
+    </canvas>
+
+    <!-- <div id="bars">
+        <h3>Health</h3>
+        <div id="health-container">
+            <div id="health"></div>
+        </div>
+
+    </div> -->
+
+    <div id="controller">
+        <div id="controller-up" class="controller" direction="n">
+            <p>up</p>
+        </div>
+        <div id="controller-down" class="controller" direction="s">
+            <p>down</p>
+        </div>
+        <div id="controller-right" class="controller" direction="e">
+            <p>right</p>
+        </div>
+        <div id="controller-left" class="controller" direction="w">
+            <p>left</p>
+        </div>
+    </div>
+
+    <!-- <div id="actions">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div> -->
+
+    <!-- <section id="popup">
+        <p>Greetings there traveler</p>
+    </section> -->
+
+    <p id="roomCount">Room Count: <span id="roomCountNum"></span></p>
+
+    <script src="{% static '/js/canvas.js' %}"></script>
+    <script src="{% static '/js/index.js' %}"></script>
+
+</body>
+
+</html>
