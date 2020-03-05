@@ -34,12 +34,21 @@ from pygame.rect import Rect
 
 
 class RNG():
-    def vecInRect(self):
+    def vecInRect(self, bounds):
         pass
 
-    def oneIn(self):
-        random.randrange(self)
+    def oneIn(self, int):
+        random.randint(int)
 
+    def range (self, int2):
+        int = 0
+        random.randrange(int, int2)
+
+    def items(self, item):
+        pass
+
+    # def item(self, item):
+    #     item = items[range(items.length)]
 
 rng = RNG()
 
@@ -224,7 +233,7 @@ class StageBuilder():
             # // if we are directly next to a floor.
             floors = 0
             for dir in Direction.cardinal:
-                tile = self.getTile(twoTupleAdd(pos, dir))
+                tile = self.getTile(twoTupleAdd(pos,  dir))
                 if tile is floor: floors += 1
             #      // Prefer to erode tiles near more floor tiles so the erosion isn't too
             #     // spiky.
@@ -234,8 +243,10 @@ class StageBuilder():
 
 class dungeon(StageBuilder):
 
+
     def __init__(self, numRoomTries, extraConnectorChance, roomExtraSize, windingPercent, _rooms, _regions,
                  _currrentRegion=-1, stage=None):
+        super().__init__(stage)
         self.numRoomTries = numRoomTries
         # positive int
         # /// The inverse chance of adding a connector between two regions that have
@@ -256,6 +267,7 @@ class dungeon(StageBuilder):
         #  /// The index of the current region being carved.
         self._currentRegion = _currrentRegion
         self.stage = stage
+        self.bounds = Rect
 
     def generate(self, stage: Stage):
         if stage.width % 2 == 0 or stage.height % 2 == 0:
@@ -291,26 +303,27 @@ class dungeon(StageBuilder):
             lastDir = None
             for dir in Direction.cardinal:
                 if self._canCarve(cell, dir):
-                    unmadeCells.add(dir)
+                    unmadeCells +=dir  #was .add(dir)
             if unmadeCells:
                 #         // Based on how "windy" passages are, try to prefer carving in the
                 #         // same direction.
                 dir = None
                 # TODO() make sure this syntax is correct
-                if unmadeCells.contains(lastDir) and rng.range(100) > self.windingPercent:
+                if lastDir in unmadeCells and rng.range(100) > self.windingPercent:
                     dir = lastDir
                 else:
                     # TODO() implement random choice correctly
                     dir = rng.items(unmadeCells)
 
                 self._carve(twoTupleAdd(cell, dir))
-                self._carve(twoTupleMultiply(twoTupleAdd(cell, dir), 2))
+                self._carve(twoTupleMultiply(twoTupleAdd(cell, dir) , 2))
 
-                cells.append(twoTupleMultiply(twoTupleAdd(cell, dir), 2))
+                cells.append(twoTupleMultiply(twoTupleAdd(cell, dir) , 2))
                 lastDir = dir
             else:
                 # TODO() fix synatax, may be like like remove[-1] or whatever
-                cells.removeLast()
+
+                cells.remove(len(cells)-1)#TODO changed this
                 # // This path has ended.
                 # // No adjacent uncarved cells.
                 lastDir = None
@@ -320,10 +333,10 @@ class dungeon(StageBuilder):
     #   /// if the starting Cell is in bounds and the destination Cell is filled
     #   /// (or out of bounds).</returns>
     def _canCarve(self, pos, dir):
-        if not self.bounds.contains(twoTupleMultiply(twoTupleAdd(pos + dir), 3)):
+        if not self.bounds.contains(twoTupleMultiply(twoTupleAdd(pos, dir), 3)):
             return False
         else:
-            return self.getTile(twoTupleMultiply(twoTupleAdd(pos + dir), 2)) == TileTypeMap[Wall]
+            return self.getTile(twoTupleMultiply(twoTupleAdd(pos, dir), 2)) == TileTypeMap[Wall]
 
     def _startRegion(self):
         self._currentRegion += 1
