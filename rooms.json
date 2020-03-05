@@ -1,0 +1,1902 @@
+[
+{
+    "model": "adventure.room",
+    "pk": 1,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 100,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 14,
+        "s": 0,
+        "e": 2,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 2,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 100,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 15,
+        "s": 0,
+        "e": 0,
+        "w": 1
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 3,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 1200,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 4,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 4,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1100,
+        "y": 1200,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 28,
+        "e": 5,
+        "w": 3
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 5,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1200,
+        "y": 1200,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 88,
+        "s": 0,
+        "e": 0,
+        "w": 4
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 6,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 800,
+        "y": 100,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 18,
+        "s": 0,
+        "e": 7,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 7,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 100,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 19,
+        "s": 0,
+        "e": 8,
+        "w": 6
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 8,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 100,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 20,
+        "s": 0,
+        "e": 9,
+        "w": 7
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 9,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1100,
+        "y": 100,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 10,
+        "w": 8
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 10,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1200,
+        "y": 100,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 0,
+        "w": 9
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 11,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 100,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 12,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 12,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 200,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 13,
+        "w": 11
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 13,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 300,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 14,
+        "w": 12
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 14,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 21,
+        "s": 1,
+        "e": 15,
+        "w": 13
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 15,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 22,
+        "s": 2,
+        "e": 16,
+        "w": 14
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 16,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 23,
+        "s": 0,
+        "e": 17,
+        "w": 15
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 17,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 18,
+        "w": 16
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 18,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 800,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 6,
+        "e": 19,
+        "w": 17
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 19,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 29,
+        "s": 7,
+        "e": 20,
+        "w": 18
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 20,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 200,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 30,
+        "s": 8,
+        "e": 0,
+        "w": 19
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 21,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 300,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 14,
+        "e": 22,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 22,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 300,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 15,
+        "e": 23,
+        "w": 21
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 23,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 300,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 31,
+        "s": 16,
+        "e": 0,
+        "w": 22
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 24,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1400,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 0,
+        "w": 100
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 25,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 1100,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 27,
+        "s": 94,
+        "e": 0,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 26,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 1300,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 27,
+        "e": 0,
+        "w": 80
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 27,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 1200,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 26,
+        "s": 25,
+        "e": 0,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 28,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1100,
+        "y": 1100,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 4,
+        "s": 98,
+        "e": 0,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 29,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 300,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 34,
+        "s": 19,
+        "e": 30,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 30,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 300,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 35,
+        "s": 20,
+        "e": 0,
+        "w": 29
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 31,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 46,
+        "s": 23,
+        "e": 32,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 32,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 47,
+        "s": 0,
+        "e": 33,
+        "w": 31
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 33,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 800,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 48,
+        "s": 0,
+        "e": 34,
+        "w": 32
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 34,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 49,
+        "s": 29,
+        "e": 35,
+        "w": 33
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 35,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 50,
+        "s": 30,
+        "e": 36,
+        "w": 34
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 36,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1100,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 37,
+        "w": 35
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 37,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1200,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 38,
+        "w": 36
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 38,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1300,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 39,
+        "w": 37
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 39,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1400,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 40,
+        "w": 38
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 40,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1500,
+        "y": 400,
+        "height": 100,
+        "width": 100,
+        "background": "http://www.cgstation.net/assets/imageLib/textures/1560460370_brick_floor/img0.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 0,
+        "w": 39
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 41,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 100,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 42,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 42,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 200,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 43,
+        "w": 41
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 43,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 300,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 44,
+        "w": 42
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 44,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 51,
+        "s": 0,
+        "e": 45,
+        "w": 43
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 45,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 46,
+        "w": 44
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 46,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 31,
+        "e": 47,
+        "w": 45
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 47,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 32,
+        "e": 48,
+        "w": 46
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 48,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 800,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 33,
+        "e": 49,
+        "w": 47
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 49,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 34,
+        "e": 50,
+        "w": 48
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 50,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 500,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 57,
+        "s": 35,
+        "e": 0,
+        "w": 49
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 51,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 600,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 64,
+        "s": 44,
+        "e": 0,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 52,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 100,
+        "y": 1100,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 53,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 53,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 200,
+        "y": 1100,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 54,
+        "w": 52
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 54,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 300,
+        "y": 1100,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 55,
+        "w": 53
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 55,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 1100,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 91,
+        "e": 56,
+        "w": 54
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 56,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 1100,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 92,
+        "e": 0,
+        "w": 55
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 57,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 600,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 70,
+        "s": 50,
+        "e": 58,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 58,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1100,
+        "y": 600,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 59,
+        "w": 57
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 59,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1200,
+        "y": 600,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 60,
+        "w": 58
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 60,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1300,
+        "y": 600,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 0,
+        "w": 59
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 61,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 100,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 62,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 62,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 200,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 63,
+        "w": 61
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 63,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 300,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 64,
+        "w": 62
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 64,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 51,
+        "e": 65,
+        "w": 63
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 65,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 66,
+        "w": 64
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 66,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 71,
+        "s": 0,
+        "e": 67,
+        "w": 65
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 67,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 72,
+        "s": 0,
+        "e": 68,
+        "w": 66
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 68,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 800,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 73,
+        "s": 0,
+        "e": 69,
+        "w": 67
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 69,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 74,
+        "s": 0,
+        "e": 70,
+        "w": 68
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 70,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 700,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 75,
+        "s": 57,
+        "e": 0,
+        "w": 69
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 71,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 800,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 86,
+        "s": 66,
+        "e": 72,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 72,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 800,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 87,
+        "s": 67,
+        "e": 73,
+        "w": 71
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 73,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 800,
+        "y": 800,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 68,
+        "e": 74,
+        "w": 72
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 74,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 800,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 90,
+        "s": 69,
+        "e": 75,
+        "w": 73
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 75,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 800,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 70,
+        "e": 76,
+        "w": 74
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 76,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1100,
+        "y": 800,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 77,
+        "w": 75
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 77,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1200,
+        "y": 800,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 0,
+        "w": 76
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 78,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 1300,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 79,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 79,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 1300,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 80,
+        "w": 78
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 80,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 1300,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 26,
+        "w": 79
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 81,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 100,
+        "y": 900,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 82,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 82,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 200,
+        "y": 900,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 83,
+        "w": 81
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 83,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 300,
+        "y": 900,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 84,
+        "w": 82
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 84,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 900,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 91,
+        "s": 0,
+        "e": 85,
+        "w": 83
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 85,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 900,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 92,
+        "s": 0,
+        "e": 86,
+        "w": 84
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 86,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 900,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 93,
+        "s": 71,
+        "e": 87,
+        "w": 85
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 87,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 900,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 94,
+        "s": 72,
+        "e": 0,
+        "w": 86
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 88,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1200,
+        "y": 1300,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 5,
+        "e": 89,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 89,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1300,
+        "y": 1300,
+        "height": 100,
+        "width": 100,
+        "background": "https://www.vectortiles.com/wp-content/uploads/rainbow-tile-patterns-02-600x600.jpg",
+        "n": 0,
+        "s": 0,
+        "e": 0,
+        "w": 88
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 90,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 900,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/da/03/3f/da033f75aa259d59b315f673aa09de43.jpg",
+        "n": 96,
+        "s": 74,
+        "e": 0,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 91,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 400,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 55,
+        "s": 84,
+        "e": 92,
+        "w": 0
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 92,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 500,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 56,
+        "s": 85,
+        "e": 93,
+        "w": 91
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 93,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 600,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 86,
+        "e": 94,
+        "w": 82
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 94,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 700,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 25,
+        "s": 87,
+        "e": 95,
+        "w": 93
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 95,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 800,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 96,
+        "w": 94
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 96,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 900,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 90,
+        "e": 97,
+        "w": 95
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 97,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1000,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 98,
+        "w": 96
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 98,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1100,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 28,
+        "s": 0,
+        "e": 99,
+        "w": 97
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 99,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1200,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 100,
+        "w": 98
+    }
+},
+{
+    "model": "adventure.room",
+    "pk": 100,
+    "fields": {
+        "title": "DEFAULT TITLE",
+        "description": "DEFAULT DESCRIPTION",
+        "monster": "DEFAULT MONSTER",
+        "item": "DEFAULT ITEM",
+        "x": 1300,
+        "y": 1000,
+        "height": 100,
+        "width": 100,
+        "background": "https://i.pinimg.com/originals/bf/e2/b4/bfe2b42b5af938be20e33c15e955f289.png",
+        "n": 0,
+        "s": 0,
+        "e": 24,
+        "w": 99
+    }
+}
+]
