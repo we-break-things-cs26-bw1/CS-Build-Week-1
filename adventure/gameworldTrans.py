@@ -37,7 +37,7 @@ class RNG():
         pass
 
     def oneIn(self):
-        pass
+        random.randrange(self)
 
 
 rng = RNG()
@@ -519,7 +519,7 @@ class RNG():
         pass
 
     def oneIn(self):
-        pass
+        random
 
 
 rng = RNG()
@@ -912,36 +912,27 @@ class dungeon(StageBuilder):
 
     #   /// Places rooms ignoring the existing maze corridors.
     def _addRooms(self, numRoomTries=60):
-       for i in range(0, numRoomTries):
-           size = random.randrange(0, 1 + self.roomExtraSize) * 2 + 1
-           rectangularity = random.randrange(0, 1 + size / 2) * 2 #Maybe need to truncate
-           width = size
-           height = size
-           if random.randint(1, 101) / 2 == 1:
-               width += rectangularity
-           else:
-               height += rectangularity
+        for i in range(0, numRoomTries):
+            size = random.randrange(0, 1 + self.roomExtraSize) * 2 + 1 #Maybe need to truncate
+            rectangularity = random.randrange(0, 1 + size / 2) * 2 + 1 #Maybe need to truncate
+            width = size
+            height = size
+            if random.randint(1, 101) / 2 == 1:
+                width += rectangularity
+            else:
+                height += rectangularity
+                y = random.randrange((self.stage.bounds.height - height) / 2) * 2 + 1 # Maybe need to truncate
+                x = random.randrange((self.stage.bounds.width - width) / 2) * 2 + 1 # Maybe need to truncate
+                room = Rect(x, y, width, height)
+                overlaps = False
+                for i in self._rooms:
+                    if room.distanceTo(other) <= 0:
+                        overlaps = True
+                        continue
 
+            self._rooms += room
 
-
-
-            x = random.randrange((self.stage.bounds.width - width) /2) * 2 + 1 #Maybe need to truncate
-            y = random.randrange((self.stage.bounds.height - height) /2) * 2 + 1 #Maybe need to truncate
-
-            room = Rect(x, y, width, height)
-
-            overlaps = False
-            for i in _rooms:
-                if room.distanceTo(other) <= 0:
-                    overlaps = True
-                    continue
-
-
-
-            _rooms += room
-
-
-            _startRegion()
+            self._startRegion()
 
             for pos in Rect(x, y, width, height):
                 _carve(pos)
