@@ -1,0 +1,21 @@
+[
+  {
+    "pk": 1,
+    "model": "adventure.Room",
+    "fields":{
+      "id":1,
+      "title":"Room 1"
+      "monster": "Default Monster",
+      "item": "Default Item",
+      "x": 0,
+      "y": 100,
+      "height": 100,
+      "width": 100,
+      "background": "Default Background",
+      "n": 5,
+      "s": 0,
+      "e": 8,
+      "w": 0
+    }
+  }
+]

@@ -6,13 +6,28 @@ from rest_framework.authtoken.models import Token
 import uuid
 
 class Room(models.Model):
-    id = models.AutoField(primary_key=True)
+    uuid = models.IntegerField(primary_key=True)
+    # uuid = models.IntegerField(default=0)
     title = models.CharField(max_length=50, default="DEFAULT TITLE")
     description = models.CharField(max_length=500, default="DEFAULT DESCRIPTION")
-    n_to = models.IntegerField(default=0)
-    s_to = models.IntegerField(default=0)
-    e_to = models.IntegerField(default=0)
-    w_to = models.IntegerField(default=0)
+    # n_to = models.IntegerField(default=0)
+    # s_to = models.IntegerField(default=0)
+    # e_to = models.IntegerField(default=0)
+    # w_to = models.IntegerField(default=0)
+
+    monster = models.CharField(max_length=50, default="Monster")
+    item = models.CharField(max_length=50, default="Food")
+    x = models.IntegerField(default=0)
+    y = models.IntegerField(default=100)
+    height = models.IntegerField(default=100)
+    width = models.IntegerField(default=100)
+    background = models.CharField(max_length=300, default="https://files.slack.com/files-pri/T4JUEB3ME-FUJ7WV4V7/fall_background.jpg")
+    n = models.IntegerField(default=0)
+    s = models.IntegerField(default=0)
+    e = models.IntegerField(default=0)
+    w = models.IntegerField(default=0)
+    
+
     def connectRooms(self, destinationRoom, direction):
         destinationRoomID = destinationRoom.id
         try:
