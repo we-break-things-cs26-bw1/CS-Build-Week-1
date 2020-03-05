@@ -29,10 +29,12 @@
 # heh stupid helper function
 import random
 import os
+#without this get a weird pygame bug
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 from pygame.rect import Rect
 
-
+#Made changes here
+#TODOS all over this code in places I have changed think I forgot to put some in other areas
 class RNG():
     def vecInRect(self, bounds):
         pass
