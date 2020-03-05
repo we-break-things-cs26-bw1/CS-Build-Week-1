@@ -10,6 +10,6 @@ from models.players import players_api
 urlpatterns = [
     path('', include('rest_auth.urls')),
     path('registration/', include('rest_auth.registration.urls')),
-    path('room/', room_list),
-    path('room/<int:pk>/', room_detail),
+    path('dungeon/', room_list),
+    path('dungeon/<int:pk>/', room_detail),
 ]
