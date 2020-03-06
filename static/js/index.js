@@ -1,47 +1,77 @@
-function save(key, value) {
-    localStorage[key] = JSON.stringify(value);
-}
-function load(key, _default) {
-    return localStorage.getItem(key) ? localStorage[key] : _default
-}
 
 //events
+
+function handleMovement(direction) {
+    let dirMap = {
+        n: "down",
+        s: "up",
+        e: "left",
+        w: "right"
+    }
+
+    if (game.currentRoom[direction] in mapCache) {
+        game.currentRoom = mapCache[game.currentRoom[direction]]
+        shiftRooms(dirMap[direction], game.rooms)
+        movePlayer(game.currentRoom.x, game.currentRoom.y)
+        $("#roomCountNum").innerText = game.roomCount
+    }
+    else if (game.currentRoom[direction] != 0) {
+        // makeRooms(2, game.currentRoom) //! remove after testing 
+
+        fetch(`https://roomsgame.herokuapp.com/api/dungeon/${game.currentRoom[direction]}/`, {
+            method: 'GET', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(r => r.json()).then(res => {
+
+            mapCache[res.uuid] = res
+            game.currentRoom = res
+
+            shiftRooms(dirMap[direction])
+            movePlayer(game.currentRoom.x, game.currentRoom.y)
+
+            game.roomCount += 1
+            $("#roomCountNum").innerText = game.roomCount
+
+            // save("rooms", mapCache)
+            // save("playerRoom", game.currentRoom)
+
+            console.log(game.currentRoom);
+
+        })
+    }
+
+
+
+
+}
 $$(".controller").forEach(i => {
     i.onclick = (e) => {
         let direction = e.currentTarget.attributes.direction.value;
-        let dirMap = {
-            n: "down",
-            s: "up",
-            e: "left",
-            w: "right"
-        }
-
-        if (!game.currentRoom[direction]) {
-            makeRooms(2, game.currentRoom) //! remove after testing 
-            // fetch("https://hidden-sands-27417.herokuapp.com/api/room/", {
-            //     method: 'GET', // *GET, POST, PUT, DELETE, etc.
-            //     mode: 'cors', // no-cors, *cors, same-origin
-            //     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-            //     credentials: 'same-origin', // include, *same-origin, omit
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            // }).then(r => r.json()).then(res => {
-            //     console.dir(res);
-            // })
-
-            $("#roomCountNum").innerText = game.roomCount
-            // save("rooms", game.rooms)
-        }
-
-
-        game.currentRoom = game.currentRoom[direction]
-        shiftRooms(dirMap[direction], game.rooms)
-        movePlayer(game.currentRoom.x, game.currentRoom.y)
-
-
+        handleMovement(direction)
     }
 })
+
+window.onkeypress = (e) => {
+    switch (e.key) {
+        case "w":
+            handleMovement("n")
+            break
+        case "a":
+            handleMovement("w")
+            break
+        case "s":
+            handleMovement("s")
+            break
+        case "d":
+            handleMovement("e")
+            break
+    }
+}
 
 
 //?TEST
@@ -74,7 +104,6 @@ function randomColor() {
 
 
 function makeRooms(int, room, roomLog = {}) {
-
     if (int <= 0) {
         return null
     }
@@ -147,10 +176,11 @@ if (!localStorage["session"]) {
 
 //controller logic 
 //load inital game rooms
-game.rooms = load("rooms", null) || makeRooms(3, game.rooms)
-
-drawRooms(game.rooms)
-movePlayer(game.currentRoom.x, game.currentRoom.y)
+game.rooms = load("rooms", null) || game.rooms
+drawRooms()
+setTimeout(() => {
+    movePlayer(game.currentRoom.x, game.currentRoom.y)
+}, 200)
 $("#roomCountNum").innerText = game.roomCount
 
 

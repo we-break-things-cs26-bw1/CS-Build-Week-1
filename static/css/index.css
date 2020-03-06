@@ -162,8 +162,8 @@
 }
 
 #controller div:hover {
-    background: black;
-    color: #fb29fd;
+    background: #fff;
+    color: lime;
 }
 
 

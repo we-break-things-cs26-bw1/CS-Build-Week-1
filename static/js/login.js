@@ -58,7 +58,7 @@ function submit() {
 
     const data = getData()
 
-    fetch(`https://hidden-sands-27417.herokuapp.com/api/${mode}/`, {
+    fetch(`https://roomsgame.herokuapp.com/api/${mode}/`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, *cors, same-origin
         cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
